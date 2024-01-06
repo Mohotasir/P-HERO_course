@@ -1,0 +1,88 @@
+
+
+/*style for html5-Tag.html   ...................  */
+nav > ul{
+    display: flex;
+    text-align: center;
+}
+nav  ul  li{
+  list-style: none;
+  margin: 12px;
+  position: relative;
+}
+nav ul li  a{
+    text-decoration: none;
+}
+nav li :hover{
+    background-color: aqua;
+}
+nav ul li .nested{
+    display: none;
+    position: absolute;
+    margin-left: -30px;
+    background-color: lightcyan;
+}
+nav ul li .nested > li{
+    text-align: center;
+}
+nav ul li:hover .nested{
+    display: block;
+}
+footer{
+    text-align: center;
+}
+article,.form-sec,.table-sec{
+    border: 1px solid rgb(226, 224, 224);
+    border-radius: 5px;
+    margin: 20px ;
+    padding: 30px 20px;
+}
+
+/*.............end............*/
+
+
+/*.............start form section..............*/
+
+form > label{
+    display: flex;
+    flex-direction: column;
+   font-size: 18px;
+   padding: 3px 0;
+   font-family: Arial, Helvetica, sans-serif;
+
+}
+form >label>input{
+    padding: 9px 8px;
+    border-radius: 5px;
+    border: 1px solid rgb(194, 187, 187);
+}
+.form-sec >h2{
+    text-align: center;
+}
+form{
+    width: 500px;
+   
+}
+
+legend{
+    border: 1px solid rgb(100, 96, 96);
+    text-align: center;
+    padding: 4px 10px;
+    background-color: rgb(164, 167, 161);
+    border-radius: 2px;
+}
+form fieldset{
+    margin: 20px 0;
+    border-radius: 3px;
+    padding: 20px;
+    text-align: center;
+   
+}
+/*...............table section .............*/
+table{
+    border-collapse: collapse;
+}
+ td,th{
+    border: 1px solid black;
+    padding: 5px 12px;
+}
