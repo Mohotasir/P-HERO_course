@@ -2,6 +2,8 @@
 /* shared styles....*/
 body{
     font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 .main-color{
     color: #FD6E0A;
@@ -15,10 +17,30 @@ body{
     font-weight: 700;
     padding: 15px 35px;
 }
+.section-title{
+    text-align: center;
+    font-family: Open Sans;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.section-description{
+    color: var(--Dark-03, #757575);
+    text-align: center;
+    font-family: Open Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; 
+    }
+
+/* nav style............. */
 nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 0 200px;
 }
 nav > h3{
     font-size: 45px;
@@ -37,4 +59,65 @@ nav li {
 nav a{
     text-decoration: none;
     color: #474747;
+}
+
+
+
+/* header style..... */
+.header-class{
+    background: #FFF8F3;
+    background: url(../assets/Images/header_bg.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 700px;
+}
+
+.banner{
+    padding:30px 30px 0px 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.banner h3{
+    font-size: 45px;
+    margin-bottom: 0px;
+}
+.banner h1{
+    font-size: 80px;
+    font-weight: 600;
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+.banner p{
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.banner img{
+   
+    width: 500px;
+}
+.banner-content{
+  max-width: 500px;
+}
+
+/* main section styles... */
+main{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+
+
+/* about section styles.. */
+.about{
+    background-color: #FFF8F3;
+    margin: 130px 0;
+    padding: 130px;
+}
+.about-info-container{
+    display: flex;
+    justify-content: space-around;
+}
+.about-info{
+    text-align: center;
 }
