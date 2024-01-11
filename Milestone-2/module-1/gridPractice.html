@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid practice</title>
+    <style>
+        .row{
+            height: 300px;
+            display: flex;
+            gap: 5px;
+            margin-bottom: 5px;
+        }
+        .row > div{
+            flex: 1;
+        }
+        img{
+           width: 100%;
+           height: 100%; 
+        }
+        .double-img{
+            height: calc((100% - 5px)/2);
+        }
+        .square-collage{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 5px;
+            
+            
+        }
+
+        /* media responsive */
+        @media screen and (max-width:576px) {
+            .row{
+                flex-direction: column;
+                height: auto;
+            }
+            .square-collage{
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+             <img src="./image/i-1.jpg" alt="">
+        </div>
+        <div class="row">
+            <div>
+                <img src="./image/i-2.jpg" alt="">
+            </div>
+            <div>
+                <img src="./image/i-3.jpg" alt="">
+            </div>
+            <div class="double-img">
+                <img src="./image/i-2.jpg" alt="">
+                <img src="./image/i-1.jpg" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div>
+                <img src="./image/i-1.jpg" alt="">
+            </div>
+            <div class="square-collage">
+                <img src="./image/i-1.jpg" alt="">
+                <img src="./image/i-2.jpg" alt="">
+                <img src="./image/i-2.jpg" alt="">
+                <img src="./image/i-2.jpg" alt="">
+                
+            </div>
+            <div> 
+                <img src="./image/i-3.jpg" alt="">
+            </div>
+           
+        </div>
+    </div>
+    </div>
+</body>
+</html>
